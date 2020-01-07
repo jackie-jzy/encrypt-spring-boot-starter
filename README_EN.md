@@ -79,8 +79,6 @@ public class TestController {
 ## Annotated list
 - [Encrypted annotation list](https://github.com/Licoy/encrypt-body-spring-boot-starter/wiki/加密注解一览表)
 - [Decryption annotation list](https://github.com/Licoy/encrypt-body-spring-boot-starter/wiki/解密注解一览表)
-## Discuss
 
 - Author blog：[https://www.licoy.cn](https://www.licoy.cn)
-## Open source agreement
 [Apache 2.0](/LICENSE)
