@@ -13,11 +13,11 @@
     - - [x] SHA-224 / 256 / 384 / 512
     - - [x] AES
     - - [x] DES
-    - - [ ] RSA
+    - - [x] RSA
 - There are ways to decrypt：
     - - [x] AES
     - - [x] DES
-    - - [ ] RSA
+    - - [x] RSA
 ## Usage method
 - Introducing dependencies in `pom.xml`：
 ```xml
