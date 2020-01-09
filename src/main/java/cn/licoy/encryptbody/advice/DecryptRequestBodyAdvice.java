@@ -199,7 +199,9 @@ public class DecryptRequestBodyAdvice implements RequestBodyAdvice {
      */
     private String switchDecrypt(String formatStringBody, DecryptAnnotationInfoBean infoBean) {
         DecryptBodyMethod method = infoBean.getDecryptBodyMethod();
-        if (method == null) throw new DecryptMethodNotFoundException();
+        if (method == null) {
+            throw new DecryptMethodNotFoundException();
+        }
         String key = infoBean.getKey();
         if (method == DecryptBodyMethod.DES) {
             key = CheckUtils.checkAndGetKey(config.getDesKey(), key, "DES-KEY");
