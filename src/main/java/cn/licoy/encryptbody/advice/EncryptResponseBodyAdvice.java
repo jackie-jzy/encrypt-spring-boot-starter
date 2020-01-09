@@ -228,7 +228,7 @@ public class EncryptResponseBodyAdvice implements ResponseBodyAdvice {
             return AESEncryptUtil.encrypt(formatStringBody, key);
         }
         if (method == EncryptBodyMethod.RSA) {
-            key = CheckUtils.checkAndGetKey(config.getRsaPubKey(), key, "AES-PUB-KEY");
+            key = CheckUtils.checkAndGetKey(config.getRsaPubKey(), key, "RSA-PUB-KEY");
             return RSAEncrypUtil.buildRSAEncryptByPublicKey(formatStringBody, key);
         }
         throw new EncryptBodyFailException();
